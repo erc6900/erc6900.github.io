@@ -54,25 +54,33 @@ export default defineConfig({
   ],
   sponsors: [
     {
-      name: "Supported by",
-      height: 60,
+      name: " ",
+      height: 120,
       items: [
         [
           {
             name: "Ethereum Foundation",
             link: "https://ethereum.org/en/",
-            image: "./eth-foundation-light.webp",
+            image: "./eth-foundation-light.svg",
           },
           {
             name: "Circle",
             link: "https://walletconnect.com",
-            image: "./circle-logo-light.png",
+            image: "./circle-logo-light.svg",
           },
           {
             name: "Quantstamp",
             link: "https://www.stripe.com",
             image: "./quantstamp-logo-light.svg",
           },
+        ],
+      ],
+    },
+    {
+      name: " ",
+      height: 120,
+      items: [
+        [
           {
             name: "Trust Wallet",
             link: "https://www.stripe.com",
@@ -89,7 +97,7 @@ export default defineConfig({
   ],
   socials: [
     {
-      link: "https://github.com/erc6900",
+      link: "https://github.com/erc6900/reference-implementation",
       icon: "github",
     },
     {

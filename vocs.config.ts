@@ -30,6 +30,10 @@ export default defineConfig({
       link: "/modules",
     },
     {
+      text: "Perk Program",
+      link: "/perks",
+    },
+    {
       text: "Resources",
       collapsed: true,
       items: [

@@ -1,0 +1,21 @@
+@layer vocs_preflight {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+:root:not(.dark) img[src*="dark.svg"] {
+  display: none;
+}
+
+.dark img[src*="light.svg"] {
+  display: none;
+}
+
+:root:not(.dark) img[src*="dark.png"] {
+  display: none;
+}
+
+.dark img[src*="light.png"] {
+  display: none;
+}

@@ -30,6 +30,10 @@ export default defineConfig({
       link: "/modules",
     },
     {
+      text: "Tooling",
+      link: "/tooling",
+    },
+    {
       text: "Perk Programs",
       link: "/perks",
     },

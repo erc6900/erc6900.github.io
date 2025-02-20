@@ -1,55 +1,50 @@
 # Modules
 
-## V0.8 Modules
+## v0.8
 
 ### Alchemy
 
-- **SingleSignerValidationModule**: Enables validation for a single signer (EOA or contract).
-- **WebAuthnValidationModule**: Enables validation for passkey signers.
-- **AllowlistModule**: Enforces ERC-20 spend limits and address/selector allowlists.
-- **NativeTokenLimitModule**: Enforces native token spend limits.
-- **PaymasterGuardModule**: Enforces use of a specific paymaster.
-- **TimeRangeModule**: Enforces time ranges for a given entity.
+- **[SingleSignerValidationModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/validation/SingleSignerValidationModule.sol)**: Enables validation for a single signer (EOA or contract).
+- **[WebAuthnValidationModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/validation/WebAuthnValidationModule.sol)**: Enables validation for passkey signers.
+- **[AllowlistModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/permissions/AllowlistModule.sol)**: Enforces ERC-20 spend limits and address/selector allowlists.
+- **[NativeTokenLimitModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/permissions/NativeTokenLimitModule.sol)**: Enforces native token spend limits.
+- **[PaymasterGuardModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/permissions/PaymasterGuardModule.sol)**: Enforces use of a specific paymaster.
+- **[TimeRangeModule](https://github.com/alchemyplatform/modular-account/blob/develop/src/modules/permissions/TimeRangeModule.sol)**: Enforces time ranges for a given entity.
 
 ### Circle
 
-- **SingleSignerValidationModule**: Enables validation for a single signer (EOA or contract). Uses a different signature format.
-- **WeightedMultisigValidationModule**: Planned (need re-design from v0.7). This module adds a weighted threshold ownership scheme to a ERC6900 smart contract account.
-- **AddressBookModule**: Planned (need re-design from v0.7). This module allows MSCA to check if the destination address is allowed to receive assets like native token, ERC20 tokens, etc.
-- **RecurringSpendLimitModule**: Planned. Enforces spend limits that reset per a given interval.
+- **[SingleSignerValidationModule](https://github.com/circlefin/buidl-wallet-contracts/blob/master/src/msca/6900/v0.8/modules/validation/SingleSignerValidationModule.sol)**: Enables validation for a single signer (EOA or contract). Uses a different signature format.
 
 ### Axiom
 
+ADD LINK TO CONTRACT
+
 - **KeystoreModule**: Facilitates keystore chain usage for modular accounts.
 
-### Trust Wallet
-
-_Coming soon_
-
-## V0.7 Modules
+## v0.7
 
 ### Alchemy
 
-- **SessionKeyPlugin**: Session keys can be added to conduct various actions on behalf of the modular account under preset rules. For v0.8, this functionality has been redesigned to make the permissions more modular.
-- **MultiOwnerPlugin**: One or more EOA accounts or ERC-1271 compliant contracts can be owners of the Modular Smart Contract Account.
-- **ColdStoragePlugin**: An unaudited plugin to demonstrate plugin capabilities. Allows the modular account to secure NFTs using a separate storage key, effectively placing it in cold storage.
+- **[SessionKeyPlugin](https://github.com/alchemyplatform/modular-account/tree/v1.0.x/src/plugins/session)**: Session keys can be added to conduct various actions on behalf of the modular account under preset rules. For v0.8, this functionality has been redesigned to make the permissions more modular.
+- **[MultiOwnerPlugin](https://github.com/alchemyplatform/modular-account/tree/v1.0.x/src/plugins/owner)**: One or more EOA accounts or ERC-1271 compliant contracts can be owners of the Modular Smart Contract Account.
+- **[ColdStoragePlugin](https://github.com/alchemyplatform/aa-virtual-cold-storage)**: An unaudited plugin to demonstrate plugin capabilities. Allows the modular account to secure NFTs using a separate storage key, effectively placing it in cold storage.
 
 ### Alchemy x Maple Finance
 
-- **MultiSigPlugin**: This plugin adds a k of n threshold ownership scheme to a ERC6900 smart contract account.
+- **[MultiSigPlugin](https://github.com/alchemyplatform/multisig-plugin/blob/v1.0.x/src/MultisigPlugin.sol)**: This plugin adds a k of n threshold ownership scheme to a ERC6900 smart contract account.
 
 ### Exactly
 
-- **WebauthnOwnerPlugin**: One or more EOA accounts, ERC-1271 compliant contracts, or P256 passkeys can be owners of an account.
+- **[WebauthnOwnerPlugin](https://github.com/exactly/webauthn-owner-plugin/blob/main/src/WebauthnOwnerPlugin.sol)**: One or more EOA accounts, ERC-1271 compliant contracts, or P256 passkeys can be owners of an account.
 
 ### Circle
 
-- **SingleOwnerPlugin**: This plugin allows MSCA to be owned by an EOA or another smart contract (which supports 1271).
-- **DefaultTokenCallbackPlugin**: Default token callback handler plugin. Similar to DefaultCallbackHandler. This plugin allows MSCA to receive tokens such as 721, 1155 and 777.
-- **WeightedWebauthnMultisigPlugin**: This plugin adds a weighted threshold ownership scheme to a ERC6900 smart contract account.
-- **AddressBookPlugin**: This plugin allows MSCA to check if the destination address is allowed to receive assets like native token, ERC20 tokens, etc.
-- **ColdStorageAddressBookPlugin**: This plugin serves as an enhanced version of the AddressBookPlugin, incorporating additional limitations on target contracts.
+- **[SingleOwnerPlugin](https://github.com/circlefin/buidl-wallet-contracts/blob/v2.1.0/src/msca/6900/v0.7/plugins/v1_0_0/acl/SingleOwnerPlugin.sol)**: This plugin allows MSCA to be owned by an EOA or another smart contract (which supports 1271).
+- **[DefaultTokenCallbackPlugin](https://github.com/circlefin/buidl-wallet-contracts/blob/v2.1.0/src/msca/6900/v0.7/plugins/v1_0_0/utility/DefaultTokenCallbackPlugin.sol)**: Default token callback handler plugin. Similar to DefaultCallbackHandler. This plugin allows MSCA to receive tokens such as 721, 1155 and 777.
+- **[WeightedWebauthnMultisigPlugin](https://github.com/circlefin/buidl-wallet-contracts/blob/v2.1.0/src/msca/6900/v0.7/plugins/v1_0_0/multisig/WeightedWebauthnMultisigPlugin.sol)**: This plugin adds a weighted threshold ownership scheme to a ERC6900 smart contract account.
+- **[AddressBookPlugin](https://github.com/circlefin/buidl-wallet-contracts/blob/v2.1.0/src/msca/6900/v0.7/plugins/v1_0_0/addressbook/AddressBookPlugin.sol)**: This plugin allows MSCA to check if the destination address is allowed to receive assets like native token, ERC20 tokens, etc.
+- **[ColdStorageAddressBookPlugin](https://github.com/circlefin/buidl-wallet-contracts/blob/v2.1.0/src/msca/6900/v0.7/plugins/v1_0_0/addressbook/ColdStorageAddressBookPlugin.sol)**: This plugin serves as an enhanced version of the AddressBookPlugin, incorporating additional limitations on target contracts.
 
 ### Libree
 
-- **SubscriptionPlugin**: Users can subscribe to services and set up recurring subscription payments.
+- **[SubscriptionPlugin](https://github.com/Libree/subscription-plugin)**: Users can subscribe to services and set up recurring subscription payments.

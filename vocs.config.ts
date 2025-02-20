@@ -30,7 +30,7 @@ export default defineConfig({
       link: "/modules",
     },
     {
-      text: "Perk Program",
+      text: "Perk Programs",
       link: "/perks",
     },
     {
@@ -65,17 +65,17 @@ export default defineConfig({
           {
             name: "Ethereum Foundation",
             link: "https://ethereum.org/en/",
-            image: "./eth-foundation-light.svg",
+            image: "./eth-foundation.svg",
           },
           {
             name: "Circle",
-            link: "https://walletconnect.com",
-            image: "./circle-logo-light.svg",
+            link: "https://circle.com",
+            image: "./circle-logo.svg",
           },
           {
             name: "Quantstamp",
-            link: "https://www.stripe.com",
-            image: "./quantstamp-logo-light.svg",
+            link: "https://www.quantstamp.com",
+            image: "./quantstamp-logo.svg",
           },
         ],
       ],
@@ -87,13 +87,13 @@ export default defineConfig({
         [
           {
             name: "Trust Wallet",
-            link: "https://www.stripe.com",
-            image: "./trust-wallet-logo-light.svg",
+            link: "https://trustwallet.com",
+            image: "./trust-wallet-logo.svg",
           },
           {
             name: "Alchemy",
-            link: "https://www.stripe.com",
-            image: "./alchemy-logo-light.svg",
+            link: "https://alchemy.com",
+            image: "./alchemy-logo.svg",
           },
         ],
       ],

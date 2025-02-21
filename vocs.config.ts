@@ -112,5 +112,9 @@ export default defineConfig({
       link: "https://x.com/erc6900",
       icon: "x",
     },
+    {
+      link: "https://t.me/modular_account_standards",
+      icon: "telegram",
+    },
   ],
 });

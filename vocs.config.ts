@@ -99,6 +99,34 @@ export default defineConfig({
             link: "https://alchemy.com",
             image: "./alchemy-logo.svg",
           },
+          {
+            name: "Exactly Protocol",
+            link: "https://exact.ly/",
+            image: "./exactly-logo.svg",
+          },
+        ],
+      ],
+    },
+    {
+      name: " ",
+      height: 120,
+      items: [
+        [
+          {
+            name: "Maple Finance",
+            link: "https://maple.finance/",
+            image: "./maple-logo.webp",
+          },
+          {
+            name: "Libree",
+            link: "https://www.libree.xyz/",
+            image: "./libree-logo.png",
+          },
+          {
+            name: "Axiom",
+            link: "https://www.axiom.xyz/",
+            image: "./axiom-logo.png",
+          },
         ],
       ],
     },

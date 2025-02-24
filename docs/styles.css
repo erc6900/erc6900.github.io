@@ -19,3 +19,16 @@
 .dark img[src*="light.png"] {
   display: none;
 }
+
+/* img[alt="Axiom"] {
+  filter: invert(1);
+} */
+
+.vocs_Sponsors_image[src$=".webp"],
+.vocs_Sponsors_image[src$=".png"] {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: var(--height);
+}

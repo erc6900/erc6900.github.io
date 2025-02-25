@@ -95,7 +95,11 @@ export default defineConfig({
             link: "https://alchemy.com",
             image: "./alchemy-logo.svg",
           },
-          {},
+          {
+            name: "",
+            link: "",
+            image: "",
+          },
         ],
       ],
     },
@@ -119,10 +123,22 @@ export default defineConfig({
             link: "https://www.libree.xyz/",
             image: "./libree-logo.png",
           },
+        ],
+        [
           {
             name: "Axiom",
             link: "https://www.axiom.xyz/",
             image: "./axiom-logo.png",
+          },
+          {
+            name: "",
+            link: "",
+            image: "",
+          },
+          {
+            name: "",
+            link: "",
+            image: "",
           },
         ],
       ],

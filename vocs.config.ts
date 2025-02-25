@@ -4,7 +4,8 @@ const version = "v0.8.0";
 
 export default defineConfig({
   title: "ERC-6900",
-  description: "Interfaces for composable smart accounts",
+  description:
+    "Interfaces for smart contract accounts and modules, optionally supporting upgradability and introspection.",
   topNav: [
     {
       text: version,
@@ -62,7 +63,7 @@ export default defineConfig({
   ],
   sponsors: [
     {
-      name: " ",
+      name: "Authors and Contributors",
       height: 120,
       items: [
         [
@@ -82,12 +83,6 @@ export default defineConfig({
             image: "./quantstamp-logo.svg",
           },
         ],
-      ],
-    },
-    {
-      name: " ",
-      height: 120,
-      items: [
         [
           {
             name: "Trust Wallet",
@@ -105,12 +100,6 @@ export default defineConfig({
             image: "./exactly-logo.svg",
           },
         ],
-      ],
-    },
-    {
-      name: " ",
-      height: 120,
-      items: [
         [
           {
             name: "Maple Finance",

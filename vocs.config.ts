@@ -6,6 +6,7 @@ export default defineConfig({
   title: "ERC-6900",
   description:
     "Interfaces for smart contract accounts and modules, optionally supporting upgradability and introspection.",
+  ogImageUrl: "/erc6900.jpg",
   topNav: [
     {
       text: version,

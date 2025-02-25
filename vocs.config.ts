@@ -64,7 +64,7 @@ export default defineConfig({
   ],
   sponsors: [
     {
-      name: "Authors and Contributors",
+      name: "Authors",
       height: 120,
       items: [
         [
@@ -95,13 +95,20 @@ export default defineConfig({
             link: "https://alchemy.com",
             image: "./alchemy-logo.svg",
           },
+          {},
+        ],
+      ],
+    },
+    {
+      name: "Contributors",
+      height: 120,
+      items: [
+        [
           {
             name: "Exactly Protocol",
             link: "https://exact.ly/",
             image: "./exactly-logo.svg",
           },
-        ],
-        [
           {
             name: "Maple Finance",
             link: "https://maple.finance/",

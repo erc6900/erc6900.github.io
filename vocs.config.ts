@@ -109,6 +109,11 @@ export default defineConfig({
       items: [
         [
           {
+            name: "OpenZeppelin",
+            link: "https://openzeppelin.com/",
+            image: "./oz-logo.svg",
+          },
+          {
             name: "Exactly Protocol",
             link: "https://exact.ly/",
             image: "./exactly-logo.svg",
@@ -118,22 +123,17 @@ export default defineConfig({
             link: "https://maple.finance/",
             image: "./maple-logo.webp",
           },
+        ],
+        [
           {
             name: "Libree",
             link: "https://www.libree.xyz/",
             image: "./libree-logo.png",
           },
-        ],
-        [
           {
             name: "Axiom",
             link: "https://www.axiom.xyz/",
             image: "./axiom-logo.png",
-          },
-          {
-            name: "",
-            link: "",
-            image: "",
           },
           {
             name: "",

@@ -26,9 +26,9 @@ jobs:
           path: ./docs/dist
       - name: Create CNAME Record
         run: |
-          echo "erc6900.io" > ./dist/CNAME
+          echo "erc6900.io" > ./docs/dist/CNAME
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./docs/dist

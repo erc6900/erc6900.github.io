@@ -38,8 +38,8 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vocs/dist
+          path: docs/dist
       - name: Create CNAME Record
-        run: echo "erc6900.io" > .vocs/dist/CNAME
+        run: echo "erc6900.io" > docs/dist/CNAME
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4

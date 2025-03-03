@@ -21,10 +21,20 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm install
+      - name: Debug pre-build
+        run: |
+          pwd
+          ls -la
       - name: Build website
         run: npm run build
-      - name: List build output
-        run: ls -la .vocs/dist
+      - name: Debug post-build
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Looking for .vocs directory:"
+          find . -name ".vocs" -type d
+          echo "Looking for dist directory:"
+          find . -name "dist" -type d
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

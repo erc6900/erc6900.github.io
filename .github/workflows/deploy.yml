@@ -11,6 +11,9 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,15 +23,13 @@ jobs:
         run: npm install
       - name: Build website
         run: npm run build
+      - name: List build output
+        run: ls -la dist
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/dist
+          path: dist
       - name: Create CNAME Record
-        run: |
-          echo "erc6900.io" > ./docs/dist/CNAME
+        run: echo "erc6900.io" > dist/CNAME
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/dist

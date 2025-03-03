@@ -7,7 +7,6 @@ export default defineConfig({
   description:
     "Interfaces for smart contract accounts and modules, optionally supporting upgradability and introspection.",
   ogImageUrl: "/erc6900.jpg",
-  basePath: "./docs",
   topNav: [
     {
       text: version,

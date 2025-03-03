@@ -71,29 +71,29 @@ export default defineConfig({
           {
             name: "Ethereum Foundation",
             link: "https://ethereum.org/en/",
-            image: "./eth-foundation.svg",
+            image: "/eth-foundation.svg",
           },
           {
             name: "Circle",
             link: "https://circle.com",
-            image: "./circle-logo.svg",
+            image: "/circle-logo.svg",
           },
           {
             name: "Quantstamp",
             link: "https://www.quantstamp.com",
-            image: "./quantstamp-logo.svg",
+            image: "/quantstamp-logo.svg",
           },
         ],
         [
           {
             name: "Trust Wallet",
             link: "https://trustwallet.com",
-            image: "./trust-wallet-logo.svg",
+            image: "/trust-wallet-logo.svg",
           },
           {
             name: "Alchemy",
             link: "https://alchemy.com",
-            image: "./alchemy-logo.svg",
+            image: "/alchemy-logo.svg",
           },
           null,
         ],
@@ -107,34 +107,34 @@ export default defineConfig({
           {
             name: "OpenZeppelin",
             link: "https://openzeppelin.com/",
-            image: "./oz-logo.svg",
+            image: "/oz-logo.svg",
           },
           {
             name: "Exactly Protocol",
             link: "https://exact.ly/",
-            image: "./exactly-logo.svg",
+            image: "/exactly-logo.svg",
           },
           {
             name: "Maple Finance",
             link: "https://maple.finance/",
-            image: "./maple-logo.webp",
+            image: "/maple-logo.webp",
           },
         ],
         [
           {
             name: "Libree",
             link: "https://www.libree.xyz/",
-            image: "./libree-logo.png",
+            image: "/libree-logo.png",
           },
           {
             name: "Axiom",
             link: "https://www.axiom.xyz/",
-            image: "./axiom-logo.png",
+            image: "/axiom-logo.png",
           },
           {
             name: "Locker Labs",
             link: "https://www.locker.money/",
-            image: "./locker-logo.svg",
+            image: "/locker-logo.svg",
           },
         ],
       ],

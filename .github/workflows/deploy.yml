@@ -11,30 +11,15 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "18"
       - name: Install dependencies
         run: npm install
-      - name: Debug pre-build
-        run: |
-          pwd
-          ls -la
       - name: Build website
         run: npm run build
-      - name: Debug post-build
-        run: |
-          echo "Current directory contents:"
-          ls -la
-          echo "Looking for .vocs directory:"
-          find . -name ".vocs" -type d
-          echo "Looking for dist directory:"
-          find . -name "dist" -type d
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
